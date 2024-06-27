@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess.com Rating Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="input-container">
+        <label for="username-input">Enter Chess.com Username:</label>
+        <input type="text" id="username-input" placeholder="Username">
+        <button id="fetch-button">Fetch Ratings</button>
+    </div>
+    <div class="options-container">
+        <label>
+            <input type="checkbox" id="rapid-checkbox" checked>
+            Rapid
+        </label>
+        <label>
+            <input type="checkbox" id="blitz-checkbox" checked>
+            Blitz
+        </label>
+        <label>
+            <input type="checkbox" id="bullet-checkbox" checked>
+            Bullet
+        </label>
+    </div>
+    <div class="card">
+        <div class="username">Hello I'm <span id="username">N/A</span></div>
+        <div class="ratings">
+            <div id="rapid-rating-section">
+                Rapid: <span id="rapid-rating">N/A</span>
+            </div>
+            <div id="blitz-rating-section">
+                Blitz: <span id="blitz-rating">N/A</span>
+            </div>
+            <div id="bullet-rating-section">
+                Bullet: <span id="bullet-rating">N/A</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
